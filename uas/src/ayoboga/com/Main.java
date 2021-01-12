@@ -164,6 +164,9 @@ public class Main {
             System.out.print("Masukan angka ke-" + (i + 1) + " : ");
             angka[i]=sc.nextInt();
         }
+        System.out.println("================== OUTPUT ==================");
+        System.out.println("Sebelum Tersusun :");
+        ob.printArray(angka);
         switch (jenis) {
             case "1" :
                 // Bubble Sort
@@ -189,10 +192,7 @@ public class Main {
                 titleSorting = "Insertion Sort";
                 break;
         }
-        System.out.println("============================================");
-        System.out.println("================== OUTPUT ==================");
-        System.out.println("Sebelum Tersusun :");
-        ob.printArray(angka);
+
 
         System.out.println("Setelah Tersusun pake "+ titleSorting +" :");
         ob.printArray(angka);

@@ -88,18 +88,65 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("============================================");
         System.out.println("======== SHORTING MENGGUNAKAN JAVA =========");
-        System.out.println("============================================");
-        System.out.print("Masukan total Array : ");
-        int total = sc.nextInt();
-        int angka[] = new int[total];
-        System.out.println("============================================");
+//        System.out.println("============================================");
+//        System.out.print("Masukan total Array : ");
+//        int total = sc.nextInt();
+//        int angka[] = new int[total];
+//        System.out.println("============================================");
+//
+//        for(int i=0; i<total;i++)
+//        {
+//            System.out.print("Masukan angka ke-" + (i + 1) + " : ");
+//            angka[i]=sc.nextInt();
+//        }
+//        System.out.println("Angka disimpan!");
+//        System.out.println("============================================");
+//        System.out.println("JENIS SHORTING YANG TERSEDIA");
+//        System.out.println("(1) Bubble Sort \t|\t (2) Selection Sort\n(3) Exchange Sort \t|\t (4) Insertion Sort");
+//        System.out.println("*)Pilih 1 angka saja ya...");
+//        System.out.println("============================================");
+//        System.out.print("Masukan jenis sortingnya : ");
+//        String jenis = sc.next();
+//        String titleSorting = "";
+//
+//        switch (jenis) {
+//            case "1" :
+//                // Bubble Sort
+//                ob.bubbleSort(angka);
+//                titleSorting = "Bubble Sort";
+//                break;
+//
+//            case "2" :
+//                // Selection Sort
+//                ob.SelectionSort(angka);
+//                titleSorting = "Selection Sort";
+//                break;
+//
+//            case "3" :
+//                // Exchange Sort
+//                ob.ExchangeSort(angka);
+//                titleSorting = "Exchange Sort";
+//                break;
+//
+//            case "4" :
+//                // Insertion Sort
+//                ob.InsertionSort(angka);
+//                titleSorting = "Insertion Sort";
+//                break;
+//        }
+//        System.out.println("============================================");
+//        System.out.println("================== OUTPUT ==================");
+//        System.out.println("Sebelum Tersusun :");
+//        ob.printArray(angka);
+//
+//        System.out.println("Setelah Tersusun pake "+ titleSorting +" :");
+//        ob.printArray(angka);
+//        System.out.println("=============== TERIMA KASIH ===============");
+//        System.out.println("============================================");
 
-        for(int i=0; i<total;i++)
-        {
-            System.out.print("Masukan angka ke-" + (i + 1) + " : ");
-            angka[i]=sc.nextInt();
-        }
-        System.out.println("Angka disimpan!");
+
+//        PILIH SHORTING TERLEBIH DAHULU
+
         System.out.println("============================================");
         System.out.println("JENIS SHORTING YANG TERSEDIA");
         System.out.println("(1) Bubble Sort \t|\t (2) Selection Sort\n(3) Exchange Sort \t|\t (4) Insertion Sort");
@@ -108,7 +155,15 @@ public class Main {
         System.out.print("Masukan jenis sortingnya : ");
         String jenis = sc.next();
         String titleSorting = "";
-
+        System.out.println("============================================");
+        System.out.print("Masukan total Array : ");
+        int total = sc.nextInt();
+        int angka[] = new int[total];
+        for(int i=0; i<total;i++)
+        {
+            System.out.print("Masukan angka ke-" + (i + 1) + " : ");
+            angka[i]=sc.nextInt();
+        }
         switch (jenis) {
             case "1" :
                 // Bubble Sort

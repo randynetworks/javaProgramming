@@ -147,15 +147,14 @@ public class Main {
 
 //        PILIH SHORTING TERLEBIH DAHULU
 
-        System.out.println("============================================");
-        System.out.println("JENIS SHORTING YANG TERSEDIA");
+        System.out.println("********************************************");
+        System.out.println("Shorting nya apa ?");
         System.out.println("(1) Bubble Sort \t|\t (2) Selection Sort\n(3) Exchange Sort \t|\t (4) Insertion Sort");
-        System.out.println("*)Pilih 1 angka saja ya...");
-        System.out.println("============================================");
-        System.out.print("Masukan jenis sortingnya : ");
+        System.out.println("********************************************");
+        System.out.print("Masukan jenis sorting : ");
         String jenis = sc.next();
         String titleSorting = "";
-        System.out.println("============================================");
+        System.out.println("********************************************");
         System.out.print("Masukan total Array : ");
         int total = sc.nextInt();
         int angka[] = new int[total];
@@ -164,7 +163,7 @@ public class Main {
             System.out.print("Masukan angka ke-" + (i + 1) + " : ");
             angka[i]=sc.nextInt();
         }
-        System.out.println("================== OUTPUT ==================");
+        System.out.println("****************** OUTPUT ******************");
         System.out.println("Sebelum Tersusun :");
         ob.printArray(angka);
         switch (jenis) {
@@ -194,10 +193,9 @@ public class Main {
         }
 
 
-        System.out.println("Setelah Tersusun pake "+ titleSorting +" :");
+        System.out.println("Setelah Tersusun dengan "+ titleSorting +" :");
         ob.printArray(angka);
-        System.out.println("=============== TERIMA KASIH ===============");
-        System.out.println("============================================");
+        System.out.println("********************************************");
 
     }
 }
